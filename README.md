@@ -41,6 +41,7 @@ it first. `npm run check` reports on the repository.
 | `src/lib/prices.js` | Formats prices for the pages |
 | `src/lib/badge.js` | The text of the home page's "Open now" badge |
 | `src/lib/deals.js` | Whether a deal week is on, on a given date |
+| `src/lib/closing-soon.js` | The previous developer's "Closing soon" notice, unfinished. Nothing uses it yet |
 | `src/home.js`, `src/deals-page.js` | Fill in the home page and the deals page |
 | `scripts/check.js` | Checks the project's Git repository: `npm run check` |
 | `package.json`, `package-lock.json` | The packages the site needs, and their exact versions |
@@ -54,5 +55,6 @@ Weekly deals run from Wednesday to Tuesday, like the printed weekly ad.
 
 ## To do
 
-The work now arrives as issues on the project's GitHub repository. A commit that
-finishes one closes it, with `Closes #` and the issue's number in its message.
+The work arrives as issues on the project's GitHub repository. Every change goes
+through a pull request into `main`, and the pull request that finishes an issue closes
+it, with `Closes #` and the issue's number in its description.
