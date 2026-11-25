@@ -4,7 +4,7 @@ import { hoursFor, formatTime } from "./hours.js";
 // eslint-disable-next-line no-unused-vars
 export function closingSoonNotice(date, leadMinutes) {
   const today = hoursFor(date);
-  if ((today.closed = !today.closed)) {
+  if (today.closed) {
     return "";
   }
   const [hour, minute] = today.close.split(":").map(Number);
