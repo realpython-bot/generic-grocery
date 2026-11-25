@@ -112,3 +112,8 @@ main {
 .open-badge.closed {
   background: #6b6b6b;
 }
+
+.closing-soon {
+  color: #b5541c;
+  font-weight: bold;
+}

@@ -2,6 +2,7 @@ import { weeklyHours } from "./data/hours.js";
 import { holidays } from "./data/holidays.js";
 import { formatHours, hoursFor, isOpen } from "./lib/hours.js";
 import { badgeText } from "./lib/badge.js";
+import { closingSoonNotice } from "./lib/closing-soon.js";
 
 const today = new Date();
 
@@ -9,6 +10,9 @@ const today = new Date();
 const badge = document.querySelector("#open-badge");
 badge.textContent = badgeText(today);
 badge.classList.toggle("closed", !isOpen(today));
+
+// "Closing soon" in the store's last hour.
+document.querySelector("#closing-soon").textContent = closingSoonNotice(today, 60);
 
 // Today's hours, at the top of the page.
 const todayHours = hoursFor(today);
