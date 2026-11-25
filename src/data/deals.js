@@ -4,7 +4,7 @@ export const dealWeek = { start: "2026-12-02", end: "2026-12-08" };
 
 export const deals = [
   { item: "Large brown eggs", unit: "dozen", regular: 549, sale: 499 },
-  { item: "Bananas", unit: "lb", regular: 69, sale: 59 },
+  { item: "Bananas", unit: "lb", regular: 69, sale: 49 },
   { item: "Honeycrisp apples", unit: "lb", regular: 249, sale: 199 },
   { item: "Whole milk, 1 gallon", unit: "each", regular: 469, sale: 399 },
   { item: "Sourdough loaf", unit: "each", regular: 599, sale: 449 },
