@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "node scripts/check.js"
+    "check": "node scripts/check.js",
+    "format": "prettier --write .",
+    "lint": "eslint ."
   },
   "keywords": [],
   "type": "module",
@@ -15,6 +17,10 @@
     "dayjs": "^1.11.23"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0",
+    "prettier": "3.10.1",
     "vite": "^8.3.8"
   }
 }
