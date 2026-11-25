@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "node scripts/check.js"
+    "check": "node scripts/check.js",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "type": "module",
@@ -15,6 +16,7 @@
     "dayjs": "^1.11.23"
   },
   "devDependencies": {
+    "prettier": "3.10.1",
     "vite": "^8.3.8"
   }
 }
