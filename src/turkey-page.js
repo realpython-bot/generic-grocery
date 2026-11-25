@@ -1,11 +1,11 @@
-import moment from "moment";
+import dayjs from "dayjs";
 import { turkey } from "./data/turkey.js";
 
 // The pickup days, like "Tuesday, December 22".
 const days = document.querySelector("#pickup-days");
 for (const day of turkey.pickupDays) {
   const item = document.createElement("li");
-  item.textContent = moment(day).format("dddd, MMMM D");
+  item.textContent = dayjs(day).format("dddd, MMMM D");
   days.append(item);
 }
 

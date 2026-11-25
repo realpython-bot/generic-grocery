@@ -14,8 +14,7 @@
   "keywords": [],
   "type": "module",
   "dependencies": {
-    "dayjs": "^1.11.23",
-    "moment": "^2.31.0"
+    "dayjs": "^1.11.23"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
